@@ -29,8 +29,12 @@ body {
 
 .events {
   display: flex;
-  gap: 40px;
-  margin-bottom: 60px;
+  align-items: flex-start; 
+  justify-content: flex-start;
+  gap: 60px; 
+  width: 100%;
+  max-width: 1500px;
+  padding: 10px 20px;
 }
 
 .event h4 {
