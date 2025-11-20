@@ -1,182 +1,233 @@
-body {
+* {
   margin: 0;
-  font-family: "Rethink Sans", sans-serif;
-  background-color: white;
-  color: black;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main-container {
+body {
+  background: white;
+  font-family: "Rethink Sans", sans-serif;
   display: flex;
-  width: 100%;
 }
+
+
+
+.main-container {
+  width: 100%;
+  display: flex;
+}
+
 
 .sidebar {
   width: 295px;
-  padding: 16px;
-  background: white;
+  padding: 20px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
 }
 
-.menu {
-  margin-top: 60px;
-  line-height: 1.6;
+.sidebar p {
+  font-family: "Rethink Sans";
   font-size: 16px;
+  color: #000;
 }
+
+
 
 .content {
-  flex: 1;
-  padding: 20px;
+  margin-left: 56px; 
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 .events {
-  display: flex;
-  align-items: flex-start; 
-  justify-content: flex-start;
-  gap: 60px; 
   width: 100%;
-  max-width: 1500px;
-  padding: 10px 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  gap: 40px;
 }
 
-.event h4 {
+.event {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-title {
+  font-family: "Rethink Sans";
   font-size: 15px;
-  margin: 0;
+}
+
+.event p {
+  font-family: "Rethink Sans";
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .event em {
-  font-family: "Spectral", serif;
+  font-size: 16px;
+  font-family: "Spectral";
   font-style: italic;
+  margin-top: 8px;
 }
 
+
+
 .intro {
-  padding: 60px 0;
+  width: 930px;
+  padding-top: 48px;
+  padding-bottom: 90px;
   border-top: 1px solid #CA6C49;
 }
 
 .intro h1 {
-  font-family: "Times New Roman", serif; 
-  font-size: 40px;       
-  font-weight: 600;     
-  color: black;
-  text-align: left;     
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-family: "Rethink Sans";
+  font-size: 37px;
+  line-height: 44px;
+  font-weight: 500;
 }
 
 .intro p {
-  font-family: "Georgia", serif; 
-  font-size: 20px;       
-  line-height: 1.6;     
-  color: #222;           
-  max-width: 900px;
+  margin-top: 16px;
+  font-family: "Spectral";
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .intro img {
-  width: 877px;
-  height: 592px; 
-  padding-top: 60px; 
-  padding-bottom: 120px;
-  padding-right: 20px; 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-  border-top: 1px #CA6C49 solid; 
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  gap: 60px; 
-  display: flex;
+  margin-top: 32px;
+  width: 860px;
+  height: auto;
+  object-fit: cover;
 }
 
-.gallery {
-  padding: 60px 0;
+
+
+.gallery-row {
+  width: 100%;
+  padding-top: 60px;
   border-top: 1px solid #CA6C49;
+  display: flex;
+  gap: 24px;
 }
 
-.gallery h2 {
-  font-size: 30px;
-  margin-bottom: 40px;
+.photo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.gallery-row { 
-    display: flex; 
-    justify-content: space-evenly; 
-    align-items: flex-start; 
-    margin-bottom: 60px; 
-    gap: 10px;
-} 
-    
-.photo img { 
-    width: 300px; 
-    height: 460px;
-    display: block; 
-    margin: 0 auto; 
+.photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-.photo p {
+.photo-title {
+  font-family: "Ethos Demo", serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.photo-desc {
+  font-family: "Rethink Sans";
   font-size: 17px;
-  text-align: center;
+  line-height: 22px;
 }
+
+
 
 .about {
+  padding-top: 60px;
+  border-top: 1px solid #CA6C49;
   display: flex;
   gap: 40px;
-  align-items: center;
-  border-top: 1px solid #CA6C49;
-  padding: 60px 0;
+  align-items: flex-start;
 }
 
 .about img {
-  width: 400px;
-  height: auto;
+  width: 408px;
+  height: 612px;
+  object-fit: cover;
 }
 
 .about h2 {
   font-size: 30px;
+  font-family: "Rethink Sans";
+  margin-bottom: 20px;
 }
 
 .about p {
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 21px;
 }
 
+
+
 .newsletter {
-  text-align: center;
-  padding: 60px 0;
+  padding-top: 60px;
+  border-top: 1px solid #CA6C49;
+}
+
+.newsletter h3 {
+  font-size: 24px;
+  font-family: "Rethink Sans";
+  font-weight: 500;
+  margin-bottom: 24px;
 }
 
 .newsletter-box {
-  display: inline-flex;
-  align-items: center;
+  width: 844px;
+  height: 45px;
   background: black;
   border-radius: 16px;
-  padding: 8px 16px;
-  gap: 16px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .newsletter-box label {
   color: white;
+  font-family: "Inter";
   font-size: 20px;
+  font-weight: 600;
 }
 
 .newsletter-box input {
+  background: transparent;
   border: none;
-  padding: 8px;
-  border-radius: 8px;
+  color: white;
+  font-family: "Inter";
   font-size: 16px;
+  width: 300px;
 }
 
 .newsletter-box button {
   background: white;
+  color: black;
   border: none;
+  padding: 6px 14px;
   border-radius: 8px;
-  padding: 8px 16px;
-  cursor: pointer;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
 }
 
+
+
 footer {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding-top: 60px;
   border-top: 1px solid #CA6C49;
-  padding: 60px 20px;
+  display: flex;
+  gap: 150px;
+  font-family: "Rethink Sans";
   font-size: 12px;
+  line-height: 18px;
 }
 
 footer strong {
